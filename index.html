@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="assets/css/dwctext.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -50,19 +51,59 @@
         </div>
     </nav><!-- End of Page Navbar -->
 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
+    <script src="assets/js/dwctext.js"></script>
+    <script type="x-shader/x-vertex" id="vertexshader">
+
+        attribute float size;
+        attribute vec3 customColor;
+        varying vec3 vColor;
+      
+        void main() {
+      
+          vColor = customColor;
+          vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+          gl_PointSize = size * ( 300.0 / -mvPosition.z );
+          gl_Position = projectionMatrix * mvPosition;
+      
+        }
+      
+      </script>
+    <script type="x-shader/x-fragment" id="fragmentshader">
+
+       uniform vec3 color;
+       uniform sampler2D pointTexture;
+      
+       varying vec3 vColor;
+      
+       void main() {
+      
+         gl_FragColor = vec4( color * vColor, 1.0 );
+         gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+      
+       }
+      </script>
+
+    
+
     <!-- page header -->
     <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">Hi</span>
-                <span class="down"><span>We are</span><br><span>Do it with Code</span></span>
-            </h1>
-            <p class="header-subtitle">The Coolest Website Builder in Town</p>
-
-            <button class="btn btn-primary">Visit My Works</button>
+        <!-- <div class="overlay"></div> -->
+        <!-- <div class="header-content container" style="position: relative;">
+        </div> -->
+        <div class="worddance">
+            <div id="magic"></div>
+            <div class="playground">
+                <div class="bottomPosition">
+                    <h1 class="special">RICARDO SANPRIETO <br><span class="minText">Creative Frontend developer</span></h1>
+                </div>
+            </div>
         </div>
     </header><!-- end of page header -->
+    
+    
 
     <!-- about section -->
     <section class="section pt-0" id="about">
