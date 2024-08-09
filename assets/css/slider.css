@@ -9,7 +9,7 @@
  * ========================================= */
  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
- body{
+ /* body{
      font-family: 'Poppins', sans-serif;
      font-weight: 300;
      font-size: 15px;
@@ -17,7 +17,7 @@
      color: #343434;
      background-color: #f1f2f6;
      overflow-x: hidden;
- }
+ } */
  a {
      cursor: pointer;
  }
@@ -76,6 +76,9 @@
  .checkbox.foth + label{
    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
  }
+ .checkbox.fifth + label{
+   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+ }
  
  .checkbox:checked + label{
    box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
@@ -98,7 +101,7 @@
    padding-top: 440px;
  }
  
- ul {
+ .sliderul {
    position: absolute;
    top: 0;
    left: 0;
@@ -109,7 +112,7 @@
    margin: 0;
    list-style: none;
  }
- ul li {
+ .sliderul .slidele {
    position: absolute;
    top: 0;
    left: 0;
@@ -139,50 +142,58 @@
    -webkit-transition: all 0.5s ease;
    transition: all 0.5s ease;
  }
- ul li span {
+ .sliderul .slidele span {
    mix-blend-mode: difference;
  }
- ul li:nth-child(2) {
+ .sliderul .slidele:nth-child(2) {
    background-image: url('https://assets.codepen.io/1462889/sl2.jpg');
  }
- ul li:nth-child(3) {
+ .sliderul .slidele:nth-child(3) {
    background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
  }
- ul li:nth-child(4) {
+ .sliderul .slidele:nth-child(4) {
+   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+ }
+ .sliderul .slidele:nth-child(5) {
    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
  }
  
  
- .checkbox.frst:checked ~ ul li:nth-child(1) {
+ .checkbox.frst:checked ~ .sliderul .slidele:nth-child(1) {
    opacity: 1;
    pointer-events: auto;
    border-radius: 16px;
  }
- .checkbox.scnd:checked ~ ul li:nth-child(2) {
+ .checkbox.scnd:checked ~ .sliderul .slidele:nth-child(2) {
    opacity: 1;
    pointer-events: auto;
    border-radius: 16px;
  }
- .checkbox.thrd:checked ~ ul li:nth-child(3) {
+ .checkbox.thrd:checked ~ .sliderul .slidele:nth-child(3) {
    opacity: 1;
    pointer-events: auto;
    border-radius: 16px;
  }
- .checkbox.foth:checked ~ ul li:nth-child(4) {
+ .checkbox.foth:checked ~ .sliderul .slidele:nth-child(4) {
+   opacity: 1;
+   pointer-events: auto;
+   border-radius: 16px;
+ }
+ .checkbox.fifth:checked ~ .sliderul .slidele:nth-child(5) {
    opacity: 1;
    pointer-events: auto;
    border-radius: 16px;
  }
  
- .logo {
+  /* {
      position: absolute;
      top: 30px;
      right: 30px;
      display: block;
      z-index: 100;
      transition: all 250ms linear;
- }
- .logo img {
+ } */
+#portfolio > img {
      height: 26px;
      width: auto;
      display: block;
@@ -194,7 +205,7 @@
    .slider-height-padding {
      padding-top: 340px;
    }
-   ul li {
+   .sliderul .slidele {
      height: 300px;
      font-size: 13px;
      letter-spacing: 1px;
@@ -205,7 +216,7 @@
    .slider-height-padding {
      padding-top: 240px;
    }
-   ul li {
+   .sliderul .slidele {
      height: 200px;
    }
  }
