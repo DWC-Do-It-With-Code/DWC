@@ -89,11 +89,12 @@ const preload = () => {
           this.renderer = renderer;
           
           this.raycaster = new THREE.Raycaster();
-          this.mouse = new THREE.Vector2(-200, 200);
+          this.mouse = new THREE.Vector2(-200, -200);
           
           this.colorChange = new THREE.Color();
   
           this.buttom = false;
+          this.started = false;
   
           this.data = {
   
@@ -176,7 +177,12 @@ const preload = () => {
               const coulors = this.particles.geometry.attributes.customColor;
               const size = this.particles.geometry.attributes.size;
   
-              const mx = intersects[ 0 ].point.x;
+            //   const mx = intersects[ 0 ].point.x;
+              let mx = intersects[ 0 ].point.x;;
+              if(!this.started) {
+                  mx = -88;
+                  this.started = true;
+              }
               const my = intersects[ 0 ].point.y;
               const mz = intersects[ 0 ].point.z;
   
