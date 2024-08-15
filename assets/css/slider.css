@@ -22,7 +22,7 @@
    display: block;
  }
  .full-height{
-   min-height: 100vh;
+   min-height: 65vh;
  }
  .over-hide{
    overflow: hidden;
@@ -62,14 +62,14 @@
    background-image: url('/assets/imgs/Arihant Online.webp');
  }
  .checkbox.thrd + label{
-   background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
+   background-image: url('/assets/imgs/Port3.png');
  }
- .checkbox.foth + label{
+ /* .checkbox.foth + label{
    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
  }
  .checkbox.fifth + label{
    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
- }
+ } */
  
  .checkbox:checked + label{
    box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
@@ -140,14 +140,14 @@
    background-image: url('/assets/imgs/Arihant Online.webp');
  }
  .sliderul .slidele:nth-child(3) {
-   background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
+   background-image: url('/assets/imgs/Port3.png');
  }
- .sliderul .slidele:nth-child(4) {
+ /* .sliderul .slidele:nth-child(4) {
    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
  }
  .sliderul .slidele:nth-child(5) {
    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
- }
+ } */
  
  
  .checkbox.frst:checked ~ .sliderul .slidele:nth-child(1) {
@@ -165,7 +165,7 @@
    pointer-events: auto;
    border-radius: 16px;
  }
- .checkbox.foth:checked ~ .sliderul .slidele:nth-child(4) {
+ /* .checkbox.foth:checked ~ .sliderul .slidele:nth-child(4) {
    opacity: 1;
    pointer-events: auto;
    border-radius: 16px;
@@ -174,7 +174,7 @@
    opacity: 1;
    pointer-events: auto;
    border-radius: 16px;
- }
+ } */
  
   /* {
      position: absolute;

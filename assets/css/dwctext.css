@@ -66,5 +66,12 @@ a {
 
 
 .special{
-    font-size: 4rem !important;
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 896px) {
+  .special{
+    font-size: 2.5rem;
+    padding: 0px 10px;
+  }
 }

@@ -95,6 +95,8 @@ const preload = () => {
   
           this.buttom = false;
           this.started = false;
+
+          let fontsize = (((window.screen.width-375)/1161)*8)+8
   
           this.data = {
   
@@ -102,7 +104,7 @@ const preload = () => {
               amount: 1500,
               particleSize: 1,
               particleColor: 0xffffff,
-              textSize: 16, //8
+              textSize: fontsize, //8
               area: 250,
               ease: .05,
           }
