@@ -61,24 +61,24 @@
    box-sizing: border-box;
    -webkit-transition: all 0.2s ease;
    transition: all 0.2s ease;
-   background-image: url('https://assets.codepen.io/1462889/sl1.jpg');
+   background-image: url('/assets/imgs/Port1.png');
    animation: border-transform 6s linear infinite alternate forwards;
      -webkit-animation-play-state: paused;
      -moz-animation-play-state: paused;
      animation-play-state: paused;
  }
  .checkbox.scnd + label{
-   background-image: url('https://assets.codepen.io/1462889/sl2.jpg');
+   background-image: url('/assets/imgs/Port2.png');
  }
  .checkbox.thrd + label{
-   background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
+   background-image: url('/assets/imgs/Port3.png');
  }
- .checkbox.foth + label{
+ /* .checkbox.foth + label{
    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
  }
  .checkbox.fifth + label{
    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
- }
+ } */
  
  .checkbox:checked + label{
    box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
@@ -126,7 +126,7 @@
    border: 5px solid #bdc3c7;
    background-size: cover;
    background-position: center;
-   background-image: url('https://assets.codepen.io/1462889/sl1.jpg');
+   background-image: url('/assets/imgs/Port1.png');
    border-radius: 50%;
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
@@ -146,17 +146,17 @@
    mix-blend-mode: difference;
  }
  .sliderul .slidele:nth-child(2) {
-   background-image: url('https://assets.codepen.io/1462889/sl2.jpg');
+   background-image: url('/assets/imgs/Port2.png');
  }
  .sliderul .slidele:nth-child(3) {
-   background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
+   background-image: url('/assets/imgs/Port3.png');
  }
- .sliderul .slidele:nth-child(4) {
+ /* .sliderul .slidele:nth-child(4) {
    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
  }
  .sliderul .slidele:nth-child(5) {
    background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
- }
+ } */
  
  
  .checkbox.frst:checked ~ .sliderul .slidele:nth-child(1) {
@@ -174,7 +174,7 @@
    pointer-events: auto;
    border-radius: 16px;
  }
- .checkbox.foth:checked ~ .sliderul .slidele:nth-child(4) {
+ /* .checkbox.foth:checked ~ .sliderul .slidele:nth-child(4) {
    opacity: 1;
    pointer-events: auto;
    border-radius: 16px;
@@ -183,7 +183,7 @@
    opacity: 1;
    pointer-events: auto;
    border-radius: 16px;
- }
+ } */
  
   /* {
      position: absolute;
