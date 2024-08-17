@@ -226,6 +226,8 @@
    .sliderul .slidele {
      height: 200px;
    }
+ }
+ @media (max-width: 768px) {
    #portfolio-container, #portfolio-parent, #portfolio{
     padding: 0px;
    }
