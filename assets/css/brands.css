@@ -1,4 +1,8 @@
-  @keyframes slide {
+body {
+  background: #f2f2f2;
+}
+
+@keyframes slide {
     from {
       transform: translateX(0);
     }
