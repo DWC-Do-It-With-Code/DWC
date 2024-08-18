@@ -95,6 +95,7 @@ const preload = () => {
   
           this.buttom = false;
           this.started = false;
+          this.swip = -88;
 
           let fontsize = (((window.screen.width-375)/1161)*8)+6;
   
@@ -170,9 +171,21 @@ const preload = () => {
   
           this.raycaster.setFromCamera( this.mouse, this.camera );
   
-          const intersects = this.raycaster.intersectObject( this.planeArea );
+          let intersects = this.raycaster.intersectObject( this.planeArea );
   
-          if ( intersects.length > 0 ) {
+          if(intersects.length == 0){
+            let intersection = {
+                distance: 0,  // Distance from the ray origin (0 means right at the origin)
+                point: new THREE.Vector3(-88, -88, 0),  // Replace with the desired dummy point
+                face: null,  // If needed, you can create a dummy face, or leave it null
+                faceIndex: -1,  // -1 typically means no face is involved
+                object: this.planeArea,  // The object that the ray would "intersect"
+                uv: new THREE.Vector2(0.5, 0.5)  // Dummy UV coordinates, can be any value
+            };
+            intersects = [intersection];
+          }
+          if ( intersects.length > 0) {
+             console.log(":)")
   
               const pos = this.particles.geometry.attributes.position;
               const copy = this.geometryCopy.attributes.position;
@@ -180,12 +193,13 @@ const preload = () => {
               const size = this.particles.geometry.attributes.size;
   
             //   const mx = intersects[ 0 ].point.x;
-              let mx = intersects[ 0 ].point.x;;
-              if(!this.started) {
-                  mx = -88;
-                  this.started = true;
+              let mx = intersects[ 0 ].point.x;
+              let my = intersects[ 0 ].point.y;
+              if(this.swip<88) {
+                  mx = this.swip;
+                  this.swip += 1;
+                  my = 0;
               }
-              const my = intersects[ 0 ].point.y;
               const mz = intersects[ 0 ].point.z;
   
               for ( var i = 0, l = pos.count; i < l; i++) {
