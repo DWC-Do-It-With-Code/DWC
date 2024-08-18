@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="description" content="We Build New Age Websites!">
     <meta name="author" content="Devcrud">
     <title>Do it with Code | DWC</title>
     <!-- font icons -->
@@ -32,16 +32,26 @@
             margin-bottom: 30px;
         }
 
+        #contact{
+            margin-bottom: -310px;
+            z-index: 1000;
+        }
+
         @media screen and (max-width: 896px) {
             .pixelgradient {
-                background-size: 70%;
-                background-position-y: 70%;
+                background-size: 100%;
+                background-position-y: 81%;
+            }
+            #contact{
+                margin-bottom: -390px;
             }
         }
 
         #service {
             margin-top: 40px;
         }
+
+        
     </style>
 </head>
 
@@ -65,7 +75,7 @@
                     <a class="link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#contact">Contact</a>
+                    <a class="link" href="#slide-1">Contact</a>
                 </li>
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
@@ -109,7 +119,6 @@
        }
       </script>
     <script src="assets/js/dwctext.js"></script>
-
     <!-- End of Page Navbar -->
 
 
@@ -280,7 +289,7 @@
     <!-- end of portfolio section -->
 
     <!-- section -->
-    <section class="section-sm bg-primary">
+    <section class="section-sm bg-primary" id="contactus">
         <!-- container -->
         <div class="container text-center text-sm-left">
             <!-- row -->
@@ -290,7 +299,7 @@
                     <p class="m-0 text-light">Always feel Free to Contact<br>Hire us Before your Competitor does !</p>
                 </div>
                 <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="btn btn-lg my-font btn-light rounded" style="font-size: 25px;">Contact Now !</button>
+                    <a href="https://wa.me/9413941555" class="btn btn-lg my-font btn-light rounded" style="font-size: 25px; color: #212529;">Contact Now !</a>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -368,7 +377,7 @@
     </section> <!-- end of testimonial section -->
 
     <!-- contact section -->
-    <section class="section" id="contact" style="margin-bottom: -275px; z-index: 1000;">
+    <section class="section" id="contact">
         <div class="container text-center">
             <!-- <p class="section-subtitle">How can you communicate?</p> -->
             <!-- <h6 class="section-title mb-5">Contact Me</h6> -->
@@ -387,12 +396,13 @@
                     </div>
                 </div>
             </form>end of contact form -->
-            <div class="form-group col-sm-12 mt-3">
+            <!-- <div class="form-group col-sm-12 mt-3">
                 <input type="submit" value="Send Message" class="btn btn-outline-primary rounded"
                     style="font-size: 20px;">
-            </div>
+            </div> -->
         </div><!-- end of container -->
-    </section><!-- end of contact section -->
+    </section>
+    <!-- end of contact section -->
 
     <!-- footer -->
     <div class="">
