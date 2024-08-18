@@ -52,27 +52,27 @@
    box-sizing: border-box;
    -webkit-transition: all 0.2s ease;
    transition: all 0.2s ease;
-   background-image: url('/assets/Portfolio/Khel Karate League.webp');
+   background-image: url('../Portfolio/Khel Karate League.webp');
    animation: border-transform 6s linear infinite alternate forwards;
      -webkit-animation-play-state: paused;
      -moz-animation-play-state: paused;
      animation-play-state: paused;
  }
  .checkbox.scnd + label{
-   background-image: url('/assets/Portfolio/Arihant Online.webp');
+   background-image: url('../Portfolio/Arihant Online.webp');
  }
  .checkbox.thrd + label{
-   background-image: url('/assets/Portfolio/Visidigi.webp');
+   background-image: url('../Portfolio/Visidigi.webp');
  }
  .checkbox.frth + label{
-  background-image: url('/assets/Portfolio/Plasto Recyclers.webp');
+  background-image: url('../Portfolio/Plasto Recyclers.webp');
 }
 
  /* .checkbox.foth + label{
-   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+   background-image: url('https:assets.codepen.io/1462889/sl4.jpg');
  }
  .checkbox.fifth + label{
-   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+   background-image: url('https:assets.codepen.io/1462889/sl4.jpg');
  } */
  
  .checkbox:checked + label{
@@ -121,7 +121,7 @@
    /* border: 5px solid #bdc3c7; */
    background-size: cover;
    background-position: center;
-   background-image: url('/assets/Portfolio/Khel Karate League.webp');
+   background-image: url('../Portfolio/Khel Karate League.webp');
    border-radius: 50%;
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
@@ -141,22 +141,22 @@
    mix-blend-mode: difference;
  }
  .sliderul .slidele:nth-child(2) {
-   background-image: url('/assets/Portfolio/Arihant Online.webp');
+   background-image: url('../Portfolio/Arihant Online.webp');
  }
  .sliderul .slidele:nth-child(3) {
-   background-image: url('/assets/Portfolio/Visidigi.webp');
+   background-image: url('../Portfolio/Visidigi.webp');
  }
  .sliderul .slidele:nth-child(4) {
-  background-image: url('/assets/Portfolio/Plasto Recyclers.webp');
+  background-image: url('../Portfolio/Plasto Recyclers.webp');
 }
 .sliderul .slidele:nth-child(5) {
-  background-image: url('/assets/Portfolio/Arihant Online.webp');
+  background-image: url('../Portfolio/Arihant Online.webp');
 }
  /* .sliderul .slidele:nth-child(4) {
-   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+   background-image: url('https:assets.codepen.io/1462889/sl4.jpg');
  }
  .sliderul .slidele:nth-child(5) {
-   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+   background-image: url('https:assets.codepen.io/1462889/sl4.jpg');
  } */
  
  

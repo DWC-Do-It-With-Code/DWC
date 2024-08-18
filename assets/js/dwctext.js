@@ -96,7 +96,7 @@ const preload = () => {
           this.buttom = false;
           this.started = false;
 
-          let fontsize = (((window.screen.width-375)/1161)*8)+8
+          let fontsize = (((window.screen.width-375)/1161)*8)+6;
   
           this.data = {
   
