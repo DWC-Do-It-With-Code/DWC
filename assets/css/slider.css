@@ -64,14 +64,14 @@
  .checkbox.thrd + label{
    background-image: url('../Portfolio/Visidigi.webp');
  }
- .checkbox.frth + label{
+ /* .checkbox.frth + label{
   background-image: url('../Portfolio/Plasto Recyclers.webp');
-}
+} */
 
- /* .checkbox.foth + label{
-   background-image: url('https:assets.codepen.io/1462889/sl4.jpg');
+ .checkbox.foth + label{
+   background-image: url('../Portfolio/Plasto Recyclers.webp');
  }
- .checkbox.fifth + label{
+ /* .checkbox.fifth + label{
    background-image: url('https:assets.codepen.io/1462889/sl4.jpg');
  } */
  
@@ -149,9 +149,9 @@
  .sliderul .slidele:nth-child(4) {
   background-image: url('../Portfolio/Plasto Recyclers.webp');
 }
-.sliderul .slidele:nth-child(5) {
+/* .sliderul .slidele:nth-child(5) {
   background-image: url('../Portfolio/Arihant Online.webp');
-}
+} */
  /* .sliderul .slidele:nth-child(4) {
    background-image: url('https:assets.codepen.io/1462889/sl4.jpg');
  }
@@ -175,7 +175,7 @@
    pointer-events: auto;
    border-radius: 16px;
  }
- .checkbox.frth:checked ~ .sliderul .slidele:nth-child(4) {
+ .checkbox.foth:checked ~ .sliderul .slidele:nth-child(4) {
   opacity: 1;
   pointer-events: auto;
   border-radius: 16px;
