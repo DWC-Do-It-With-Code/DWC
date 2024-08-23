@@ -64,16 +64,15 @@
  .checkbox.thrd + label{
    background-image: url('../Portfolio/Visidigi.webp');
  }
- /* .checkbox.frth + label{
-  background-image: url('../Portfolio/Plasto Recyclers.webp');
-} */
-
  .checkbox.foth + label{
    background-image: url('../Portfolio/Plasto Recyclers.webp');
  }
- /* .checkbox.fifth + label{
-   background-image: url('https:assets.codepen.io/1462889/sl4.jpg');
- } */
+ .checkbox.ffth + label{
+   background-image: url('../Portfolio/GlobIQ.webp');
+ }
+ .checkbox.sxth + label{
+  background-image: url('../Portfolio/Amodini.webp');
+}
  
  .checkbox:checked + label{
    box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
@@ -149,16 +148,12 @@
  .sliderul .slidele:nth-child(4) {
   background-image: url('../Portfolio/Plasto Recyclers.webp');
 }
-/* .sliderul .slidele:nth-child(5) {
-  background-image: url('../Portfolio/Arihant Online.webp');
-} */
- /* .sliderul .slidele:nth-child(4) {
-   background-image: url('https:assets.codepen.io/1462889/sl4.jpg');
+.sliderul .slidele:nth-child(5) {
+  background-image: url('../Portfolio/GlobIQ.webp');
+}
+.sliderul .slidele:nth-child(6) {
+   background-image: url('../Portfolio/Amodini.webp');
  }
- .sliderul .slidele:nth-child(5) {
-   background-image: url('https:assets.codepen.io/1462889/sl4.jpg');
- } */
- 
  
  .checkbox.frst:checked ~ .sliderul .slidele:nth-child(1) {
    opacity: 1;
@@ -180,18 +175,17 @@
   pointer-events: auto;
   border-radius: 16px;
 }
-
- /* .checkbox.foth:checked ~ .sliderul .slidele:nth-child(4) {
+ .checkbox.ffth:checked ~ .sliderul .slidele:nth-child(5) {
    opacity: 1;
    pointer-events: auto;
    border-radius: 16px;
  }
- .checkbox.fifth:checked ~ .sliderul .slidele:nth-child(5) {
-   opacity: 1;
-   pointer-events: auto;
-   border-radius: 16px;
- } */
  
+ .checkbox.sxth:checked ~ .sliderul .slidele:nth-child(6) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
   /* {
      position: absolute;
      top: 30px;
