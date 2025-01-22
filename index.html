@@ -32,7 +32,7 @@
             margin-bottom: 30px;
         }
 
-        #contact{
+        #contact {
             margin-bottom: -300px;
             z-index: 1000;
         }
@@ -42,10 +42,12 @@
                 background-size: 120%;
                 background-position-y: 81%;
             }
-            #contact{
+
+            #contact {
                 margin-bottom: -350px;
             }
-            .nmbinm{
+
+            .nmbinm {
                 margin-bottom: 0px !important;
             }
         }
@@ -54,120 +56,122 @@
             margin-top: 40px;
         }
 
-        .npad{
-            padding: 40px 0px;            ;
+        .npad {
+            padding: 40px 0px;
+            ;
         }
     </style>
 
     <style>
         :root {
-        --surface-color: #fff;
-        --curve: 40;
+            --surface-color: #fff;
+            --curve: 40;
         }
+
         .cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        margin: 4rem 5vw;
-        padding: 0;
-        list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 5vw;
+            padding: 0;
+            list-style-type: none;
         }
 
         .card {
-        position: relative;
-        display: block;
-        height: 100%;  
-        border-radius: calc(var(--curve) * 1px);
-        overflow: hidden;
-        text-decoration: none;
+            position: relative;
+            display: block;
+            height: 100%;
+            border-radius: calc(var(--curve) * 1px);
+            overflow: hidden;
+            text-decoration: none;
         }
 
-        .card__image {      
-        width: 100%;
-        height: auto;
+        .card__image {
+            width: 100%;
+            height: auto;
         }
 
         .card__overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;      
-        border-radius: calc(var(--curve) * 1px);    
-        background-color: var(--surface-color);      
-        transform: translateY(100%);
-        transition: .2s ease-in-out;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            border-radius: calc(var(--curve) * 1px);
+            background-color: var(--surface-color);
+            transform: translateY(100%);
+            transition: .2s ease-in-out;
         }
 
         .card:hover .card__overlay {
-        transform: translateY(0);
+            transform: translateY(0);
         }
 
         .card__header {
-        position: relative;
-        display: flex;
-        align-items: center;
-        gap: 2em;
-        padding: 2em;
-        border-radius: calc(var(--curve) * 1px) 0 0 0;    
-        background-color: var(--surface-color);
-        transform: translateY(-100%);
-        transition: .2s ease-in-out;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            padding: 2em;
+            border-radius: calc(var(--curve) * 1px) 0 0 0;
+            background-color: var(--surface-color);
+            transform: translateY(-100%);
+            transition: .2s ease-in-out;
         }
 
         .card__arc {
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        bottom: 100%;
-        right: 0;      
-        z-index: 1;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            z-index: 1;
         }
 
         .card__arc path {
-        fill: var(--surface-color);
-        d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-        }       
+            fill: var(--surface-color);
+            d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+        }
 
         .card:hover .card__header {
-        transform: translateY(0);
+            transform: translateY(0);
         }
 
         .card__thumb {
-        flex-shrink: 0;
-        width: 50px;
-        height: 50px;      
-        border-radius: 50%;      
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
         }
 
         .card__title {
-        font-size: 1em;
-        margin: 0 0 .3em;
-        color: #6A515E;
+            font-size: 1em;
+            margin: 0 0 .3em;
+            color: #6A515E;
         }
 
         .card__tagline {
-        display: block;
-        margin: 1em 0;
-        font-family: "MockFlowFont";  
-        font-size: .8em; 
-        color: #D7BDCA;  
+            display: block;
+            margin: 1em 0;
+            font-family: "MockFlowFont";
+            font-size: .8em;
+            color: #D7BDCA;
         }
 
         .card__status {
-        font-size: .8em;
-        color: #D7BDCA;
+            font-size: .8em;
+            color: #D7BDCA;
         }
 
         .card__description {
-        padding: 0 2em 2em;
-        margin: 0;
-        color: #D7BDCA;
-        font-family: "MockFlowFont";   
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        overflow: hidden;
+            padding: 0 2em 2em;
+            margin: 0;
+            color: #D7BDCA;
+            font-family: "MockFlowFont";
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -193,6 +197,9 @@
                 </li>
                 <li class="item">
                     <a class="link" href="#slide-1">Contact</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#slide-1">Products</a>
                 </li>
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
@@ -341,105 +348,203 @@
     <!-- end of service section -->
 
     <!-- domains start -->
-    <ul class="cards">
-        <li>
-          <a href="" class="card">
-            <img src="assets\imgs\sample1.jpg" class="card__image" alt="" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
-                <div class="card__header-text">
-                  <h3 class="card__title">Jessica Parker</h3>            
-                  <span class="card__status">1 hour ago</span>
-                </div>
-              </div>
-              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-            </div>
-          </a>      
-        </li>
-        <li>
-            <a href="" class="card">
-                <img src="assets\imgs\sample1.jpg" class="card__image" alt="" />
-                <div class="card__overlay">
-                <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                    <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
-                    <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>            
-                    <span class="card__status">1 hour ago</span>
+    <section class="section">
+        <div class="container text-center">
+            <p class="section-subtitle">Domains</p>
+            <h6 class="section-title mb-6">Products</h6>
+        </div>
+        <ul class="cards">
+            <li>
+                <a href="" class="card">
+                    <img src="assets/imgs/ecommerce.png" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                <path />
+                            </svg>
+                            <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
+                            <div class="card__header-text">
+                                <h3 class="card__title" style="font-size: 22px;">E-Commerce Store</h3>
+                            </div>
+                        </div>
+                        <p class="card__description">Custom platforms for seamless selling and customer engagement.</p>
                     </div>
-                </div>
-                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                </div>
-            </a>      
-        </li>
-        <li>
-            <a href="" class="card">
-                <img src="assets\imgs\sample1.jpg" class="card__image" alt="" />
-                <div class="card__overlay">
-                <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                    <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
-                    <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>            
-                    <span class="card__status">1 hour ago</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="card">
+                    <img src="assets/imgs/landingpage.png" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                <path />
+                            </svg>
+                            <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
+                            <div class="card__header-text">
+                                <h3 class="card__title" style="font-size: 22px;">Landing Page</h3>
+                            </div>
+                        </div>
+                        <p class="card__description">High-converting pages to boost engagement and campaign success.</p>
                     </div>
-                </div>
-                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                </div>
-            </a>      
-        </li>
-        <li>
-            <a href="" class="card">
-                <img src="assets\imgs\sample1.jpg" class="card__image" alt="" />
-                <div class="card__overlay">
-                <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                    <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
-                    <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>            
-                    <span class="card__status">1 hour ago</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="card">
+                    <img src="assets/imgs//webapp.png" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                <path />
+                            </svg>
+                            <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
+                            <div class="card__header-text">
+                                <h3 class="card__title" style="font-size: 22px;">Web Applications</h3>
+                            </div>
+                        </div>
+                        <p class="card__description">Scalable, interactive apps tailored to business needs.</p>
                     </div>
-                </div>
-                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                </div>
-            </a>      
-        </li>
-        <li>
-            <a href="" class="card">
-                <img src="assets\imgs\sample1.jpg" class="card__image" alt="" />
-                <div class="card__overlay">
-                <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                    <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
-                    <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>            
-                    <span class="card__status">1 hour ago</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="card">
+                    <img src="assets/imgs/wedding.png" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                <path />
+                            </svg>
+                            <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
+                            <div class="card__header-text">
+                                <h3 class="card__title" style="font-size: 22px;">Wedding Website</h3>
+                            </div>
+                        </div>
+                        <p class="card__description">Personalized sites to share details and cherish memories.</p>
                     </div>
-                </div>
-                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                </div>
-            </a>      
-        </li>
-        <li>
-            <a href="" class="card">
-                <img src="assets\imgs\sample1.jpg" class="card__image" alt="" />
-                <div class="card__overlay">
-                <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                    <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
-                    <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>            
-                    <span class="card__status">1 hour ago</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="card">
+                    <img src="assets/imgs/startup.png" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                <path />
+                            </svg>
+                            <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
+                            <div class="card__header-text">
+                                <h3 class="card__title" style="font-size: 22px;">Startup Website</h3>
+                            </div>
+                        </div>
+                        <p class="card__description">Dynamic sites showcasing ideas, attracting investors, and driving
+                            growth effectively.</p>
                     </div>
-                </div>
-                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                </div>
-            </a>      
-        </li>
-      </ul>
-     <!-- domains end -->
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="card">
+                    <img src="assets/imgs/portfolio.png" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                <path />
+                            </svg>
+                            <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
+                            <div class="card__header-text">
+                                <h3 class="card__title" style="font-size: 22px;">Personal Portfolio</h3>
+                            </div>
+                        </div>
+                        <p class="card__description">Showcase skills, achievements, and work through a professional,
+                            captivating website.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="card">
+                    <img src="assets/imgs/wordpress.png" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                <path />
+                            </svg>
+                            <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
+                            <div class="card__header-text">
+                                <h3 class="card__title" style="font-size: 22px;">Wordpress Website</h3>
+                            </div>
+                        </div>
+                        <p class="card__description">Versatile WordPress sites, from blogs to corporate solutions.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="card">
+                    <img src="assets/imgs/elearn.png" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                <path />
+                            </svg>
+                            <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
+                            <div class="card__header-text">
+                                <h3 class="card__title" style="font-size: 22px;">E-Learning Site</h3>
+                            </div>
+                        </div>
+                        <p class="card__description">Interactive platforms for effective and engaging online education.
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="card">
+                    <img src="assets/imgs/erp.png" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                <path />
+                            </svg>
+                            <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
+                            <div class="card__header-text">
+                                <h3 class="card__title" style="font-size: 22px;">ERP Systems</h3>
+                            </div>
+                        </div>
+                        <p class="card__description">Simplify operations, enhance efficiency, and improve decisions.</p>
+                    </div>
+                </a>
+            </li>
+
+
+            <li>
+                <a href="" class="card">
+                    <img src="assets/imgs/3d.png" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                <path />
+                            </svg>
+                            <img class="card__thumb" src="assets\imgs\sample2.jpg" alt="" />
+                            <div class="card__header-text">
+                                <h3 class="card__title" style="font-size: 22px;">3D Website</h3>
+                            </div>
+                        </div>
+                        <p class="card__description">Simplify operations, enhance efficiency, and improve decisions.</p>
+                    </div>
+                </a>
+            </li>
+
+
+
+
+
+        </ul>
+    </section>
+    <!-- domains end -->
 
     <!-- Brands Section-->
     <section class="section npad">
@@ -523,7 +628,8 @@
                     <p class="m-0 text-light">Always feel Free to Contact<br>Hire us Before your Competitor does !</p>
                 </div>
                 <div class="col-sm offset-sm-2 offset-md-3">
-                    <a href="https://wa.me/6367908809" class="btn btn-lg my-font btn-light rounded" style="font-size: 25px; color: #212529;">Contact Now !</a>
+                    <a href="https://wa.me/6367908809" class="btn btn-lg my-font btn-light rounded"
+                        style="font-size: 25px; color: #212529;">Contact Now !</a>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -621,19 +727,20 @@
                 </div>
             </form> -->
             <!-- end of contact form -->
-             <div class="about-caption">
-                    <p class="section-subtitle" style="margin: 40px 0px;">Got a question or idea? <br> Need a quote ? or just want to say hello? 
-                        <br>
-                        <br>
-                        Send it our way—we'll get back to you faster than your current website developer ever does!"
+            <div class="about-caption">
+                <p class="section-subtitle" style="margin: 40px 0px;">Got a question or idea? <br> Need a quote ? or
+                    just want to say hello?
+                    <br>
+                    <br>
+                    Send it our way—we'll get back to you faster than your current website developer ever does!"
                     <br>
                     <br>
                     Call or Text us Anytime - <br>6367908809
                 </p>
-                </div>
+            </div>
             <div class="form-group col-sm-12 mt-3">
-                <a type="submit" href="https://wa.me/6367908809" target="_blank" value="Send Message" class="btn btn-outline-primary rounded"
-                    style="font-size: 20px;">Send Message</a>
+                <a type="submit" href="https://wa.me/6367908809" target="_blank" value="Send Message"
+                    class="btn btn-outline-primary rounded" style="font-size: 20px;">Send Message</a>
             </div>
         </div><!-- end of container -->
     </section>
